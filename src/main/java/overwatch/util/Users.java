@@ -41,9 +41,6 @@ public class Users {
   }
 
   public static User createUser(String username, String system, String region) {
-    System.out.println(username);
-    System.out.println(system);
-    System.out.println(region);
     try {
       Connection conn = DB();
       Statement stmt = conn.createStatement();

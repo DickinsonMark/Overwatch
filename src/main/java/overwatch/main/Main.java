@@ -28,8 +28,6 @@ public class Main {
       obj.put("battle tag", req.params("username"));
       obj.put("system", req.params("system"));
       obj.put("balance", req.params("region"));
-      res.cookie("user", "ajsdbfihabsidfb");
-      System.out.println(req.cookies());
       return Users.createUser(
           req.params("username"),
           req.params("system"),
